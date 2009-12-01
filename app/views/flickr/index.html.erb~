@@ -1,6 +1,0 @@
-<script type="text/javascript">
-  setTimeout('pullPic()', 1000);
-</script>
-
-<div id="images">
-</div>

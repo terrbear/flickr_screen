@@ -3,7 +3,7 @@ function raisePic(pic) {
   speed = ((Math.random() * 100000) % 24000) + 36000;
   pic.animate({
     bottom: parseInt(pic.css('bottom')) + 2000
-  }, speed);
+  }, speed, "linear", function() { pic.remove(); });
 }
 
 function pullPic() {

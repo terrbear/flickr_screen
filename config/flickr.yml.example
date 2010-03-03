@@ -1,0 +1,5 @@
+--- !map:HashWithIndifferentAccess
+  key: "your_key"
+  secret: "your_secret_token"
+  token_cache: "token_cache.yml"
+

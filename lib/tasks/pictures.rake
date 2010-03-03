@@ -4,7 +4,7 @@ namespace :pictures do
     flickr = Flickr.new(File.join(RAILS_ROOT, 'config', 'flickr.yml'))
     (1..5).each do |page|
       puts "grabbing page #{page}"
-      photos = flickr.photos.search(:user_id => SARA_FLICKR_ID,
+      photos = flickr.photos.search(:user_id => FLICKR_ID,
                                     :page => page)
       photos.each do |photo|
         pic = photo.sizes.find{|p| p.label == "Medium"}
